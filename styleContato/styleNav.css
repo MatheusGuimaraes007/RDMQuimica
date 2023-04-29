@@ -1,0 +1,119 @@
+.nav-principal {
+    background-color: #DBDBDB;
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 10%;
+    margin-left: 5%;
+}
+.logo img{
+    width: 100%;
+}
+.navegacao {
+    margin-right: 5%;
+}
+.navegacao ul {
+    display: flex;
+    gap: 2rem;
+}
+.navegacao ul li{
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+.navegacao ul li a{
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.li1 {
+    background-color: #6F7AA3;
+}
+.navegacao ul li:hover{
+    background-color: #6F7AA3;
+}
+.risco-interno {
+    width: 100%;
+    height:0.0625rem;
+    background-color: #595959;
+}
+.detalhe-nav {
+    width: 100%;
+    height: 0.3rem;
+    background-color: #DBDBDB;
+}
+.menu-mobile {
+    display: none;
+}
+.show-menu {
+    display: none;
+}
+
+@media (max-width:800px) and (min-width:650px) {
+    .logo {
+        margin-left: 1%;
+        width: 15%;
+    }
+    .navegacao {
+        margin-right: 1%;
+    }
+    .navegacao ul{
+        gap: 0.5rem;
+    }
+}
+@media (max-width: 688px) and (min-width: 650px) {
+    .navegacao ul li a{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 649px) and (min-width: 249px) {
+    .li1 {
+        background-color: white;
+    }
+    .logo{
+        width: 20%;
+    }
+    .navegacao {
+        display: none;
+    }
+    .menu-mobile {
+        display: block;
+        margin-right: 1%;
+        width: 4rem;
+    }
+    .menu-mobile img {
+        width: 100%;
+    }
+    .show-menu {
+        height: 40vh;
+    }
+    .show-menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .show-menu ul li a {
+        font-size: 2rem;
+        font-weight: bold;
+        border-bottom: 1px solid black;
+    }
+    .show {
+        display: initial;
+        animation: show 1s infinite alternate;
+    }
+    @keyframes show {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-15px);
+        }
+      }
+}

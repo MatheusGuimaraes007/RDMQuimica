@@ -1,0 +1,99 @@
+.container-footer {
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.redes-sociais {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.endereco-logo {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-footer {
+    width: 20rem;
+    height: 20rem;
+}
+.logo-footer img {
+    width: 100%;
+}
+.endereco {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.endereco span {
+    color: white;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.5625rem;
+    text-align: center;
+    margin: 0.15rem;
+}
+.copy-pagina {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.copy-pagina span {
+ color: white;
+}
+@media (max-width: 650px) and (min-width: 100px) {
+    .logo-footer {
+        display: none;
+    }
+    .endereco-logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .endereco {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 600px) and (min-width: 300px) {
+    .copy-pagina span {
+        font-size: 0.7rem;
+    }
+    .copy {
+        width: 2rem;
+    }
+    .copy img {
+        width: 100%;
+    }
+}
+@media (max-width: 423px) and (min-width:200px) {
+    .copy-pagina span {
+        font-size: 0.5rem;
+    }
+}
+@media (max-width: 650px) and (min-width: 100px) {
+    .logo-footer {
+        display: none;
+    }
+    .endereco-logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .endereco {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}

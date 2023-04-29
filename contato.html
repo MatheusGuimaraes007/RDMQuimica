@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styleContato/style.css">
+</head>
+
+<body>
+    <nav>
+        <div id="nav-bar" class="nav-principal">
+
+            <div class="logo">
+                <a href="index.html"><img src="img/Logo_RDM.png" alt="logo_empresa"></a>
+            </div>
+            <div class="navegacao">
+                <ul>
+                    <li class="li1"><a href="index.html">Home</a></li>
+                    <li class="li2"><a href="produtos.html">Produtos</a></li>
+                    <li class="li3"><a href="#quemsomos">Quem Somos</a></li>
+                    <li class="li4"><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="menu-mobile">
+                <img src="img/show.svg" alt="menu" class="menu-hamburguer">
+            </div>
+        </div>
+        <div class="risco-interno"></div>
+        <div class="detalhe-nav"></div>
+        <div class="show-menu" id="menu-mobile">
+            <ul>
+                <li class="li1"><a href="#introducao">Home</a></li>
+                <li class="li2"><a href="produtos.html">Produtos</a></li>
+                <li class="li3"><a href="#quemsomos">Quem Somos</a></li>
+                <li class="li4"><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="formulario">
+        <div class="formulario-container">
+            <div class="titulo-form">
+                <h1>Faça um orçamento conosco</h1>
+            </div>
+            <form action="https://formsubmit.co/vendas@rdmquimica.com.br" method="POST">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                <input type="hidden" name="_cc" value="matheusguimaraes668@gmail.com">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <label for="Nome"> Nome </label>
+                <input type="text" name="Nome" required>
+                <label for="Empresa"> Empresa </label>
+                <input type="text" name="Empresa" required>
+                <label for="Numero">Contato / Whatsapp:</label>
+                <input type="number" name="Numero">
+                <label for="Email"> E-mail </label>
+                <input type="email" name="email" required>
+                <label for="Mensagem">Mensagem</label>
+                <textarea name="mensagem" style="resize: none;" cols="30" rows="10"></textarea>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container-footer">
+            <div class="redes-sociais">
+                <div class="wpp"><a href=""><img src="img/wpp.svg" alt="whatsapp"></a></div>
+                <div class="instagram"><a href=""><img src="img/instagram.png" alt="instagram"></a></div>
+                <div class="email"><a href=""><img src="img/mail.svg" alt="Email"></a></div>
+            </div>
+            <div class="endereco-logo">
+                <div class="logo-footer">
+                    <img src="img/Logo_RDM.png" alt="Logo">
+                </div>
+                <div class="endereco">
+                    <span>Rua Santo Antônio, 115 - Centro - Santo Antônio do Jardim
+                        CEP: 13995-000 - São Paulo</span>
+                    <span>sac@rdmquimica.com.br </span>
+                    <span>vendas@rdmquimica.com.br </span>
+                    <span>(19) 99675 - 5751</span>
+                </div>
+            </div>
+            <div class="copy-pagina">
+                <span>RDM QUIMICA - TODOS OS DIREITOS RESERVADOS - COPYRIGHT </span>
+                <div class="copy"><img src="img/copy.png" alt="copyright"></div>
+                <span>2022</span>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="script/script.js"></script>
+</body>
+</html>

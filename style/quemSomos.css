@@ -1,0 +1,151 @@
+.quemSomos {
+    margin-top: 2.8125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo-quemSomos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1.875rem;
+}
+.titulo-quemSomos h1 {
+    font-weight: 450;
+    font-size: 5rem;
+    line-height: 3.75rem;  
+}
+.Figure-quemSomos {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.125rem;
+}
+.desenho {
+    width: 9.375rem;
+    height: 9.375rem;
+}
+.desenho img {
+    width: 100%;
+}
+.line {
+    width: 90%;
+    height: 0.3125rem;
+    background: #283257;
+}
+.descricao-quemSomos {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.descricao-quemSomos span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 2.8rem;
+    text-align: start;
+    margin: 0.2rem;
+}
+
+.frase-copy {
+    position: relative;
+    top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.frase-copy span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.125rem;
+    text-align: center;
+    color: #263056;
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+    .titulo-quemSomos h1 {
+        font-size: 5rem;
+    }
+    .Figure-quemSomos {
+        width: 90%;
+    }
+    .frase-copy span {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 899px) and (min-width: 700px) {
+    .titulo-quemSomos h1 {
+        position: relative;
+        font-size: 4.6rem;
+        left: 5%;
+    }
+    .desenho {
+        width: 7rem;
+        height: 7rem;
+    }
+    .frase-copy span {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+}
+@media (max-width: 699px) and (min-width: 500px) {
+    .Figure-quemSomos {
+        gap: 2rem;
+    }
+    .quemSomos {
+        margin-top: 0.3rem;
+    }
+    .titulo-quemSomos h1 {
+        position: relative;
+        font-size: 3.7rem;
+        left: 10%;
+    }
+    .desenho {
+        width: 6rem;
+        height: 6rem;
+    }
+    .descricao-quemSomos span {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+    .frase-copy {
+        margin: 1rem 1rem;
+    }
+    .frase-copy span {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+}
+@media (max-width: 499px) and (min-width:200px) {
+    .desenho {
+        display: none;
+    }
+    .quemSomos {
+        margin-top: 1rem;
+    }
+    .titulo-quemSomos {
+        position: inherit;
+    }
+    .titulo-quemSomos h1 {
+        position: relative;
+        font-size: 2.7rem;
+    }
+    .descricao-quemSomos span {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+    .frase-copy {
+        margin: 0.5rem 0.5rem;
+    }
+    .frase-copy span {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
