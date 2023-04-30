@@ -1,0 +1,28 @@
+.buttonzap {
+    position: fixed;
+    bottom: 30px;
+    left: 90%;
+    z-index: 300;
+    animation-name: balanco;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.icon img {
+    width: 5rem;
+}
+
+@keyframes balanco {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
