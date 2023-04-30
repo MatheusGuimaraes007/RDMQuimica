@@ -1,6 +1,6 @@
 .nav-principal {
     background-color: #DBDBDB;
-    z-index: 300;
+    z-index: 602;
     width: 100%;
     height: 4.5rem;
     display: flex;
@@ -69,6 +69,18 @@
     display: none;
 }
 
+.logo-menu-mobile {
+    position: fixed;
+    z-index: 600;
+    width: 12.5rem;
+    height: 6.25rem;
+    bottom: 4.6875rem;
+}
+
+.logo-menu-mobile img {
+    width: 100%;
+}
+
 @media (max-width:800px) and (min-width:650px) {
     .logo {
         margin-left: 1%;
@@ -113,37 +125,42 @@
         width: 100%;
     }
 
-    .show-menu {
-        height: 40vh;
-    }
-
     .show-menu ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2rem;
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 
     .show-menu ul li a {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: bold;
-        border-bottom: 1px solid black;
+        border-bottom: 0.125rem solid #6F7AA3;
     }
 
     .show {
         display: initial;
-        animation: show 1s infinite alternate;
+        animation: show 1s;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 600;
+        background-color: #DBDBDB;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
     }
 
     @keyframes show {
-        from {
-            transform: translateY(0px);
+        0% {
+            transform: translateY(-100vh);
         }
 
-        to {
-            transform: translateY(-15px);
+        100% {
+            transform: translateY(0vh);
         }
     }
+
 }
