@@ -17,7 +17,7 @@
 }
 
 .logo img {
-    width: 100%;
+    width: 70%;
 }
 
 .navegacao {
@@ -69,17 +69,6 @@
     display: none;
 }
 
-.logo-menu-mobile {
-    position: fixed;
-    z-index: 600;
-    width: 12.5rem;
-    height: 6.25rem;
-    bottom: 4.6875rem;
-}
-
-.logo-menu-mobile img {
-    width: 100%;
-}
 
 @media (max-width:800px) and (min-width:650px) {
     .logo {
