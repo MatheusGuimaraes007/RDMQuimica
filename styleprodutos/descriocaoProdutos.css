@@ -1,235 +1,138 @@
-.divisao {
-    width: 80%;
-    height: 0.3125rem;
-    background-color: #6F7890;
-    margin-top: 6rem;
-}
-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .container-produtos {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    gap: 40px;
 }
-.container-produto-left {
-    width: 100%;
+.produto {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    width: 20%;
+    background-color: #C8D0E9;
+    border-radius: 20px;
 }
-.container-produto-right {
-    width: 100%;
+.produto-descricao {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 5%;
-}
-.texto-produto {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 1.875rem;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
 }
-.titulos-subtitulo {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3125rem;
-}
-.titulos-subtitulo h1 {
+h1 {
+    font-family: 'Asap';
+    font-style: normal;
     font-weight: 800;
-    font-size: 4rem;
-    line-height: 3rem;
+    font-size: 22px;
+    line-height: 30px;
     color: #263056;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #6F7AA2;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
 }
-.titulos-subtitulo span {
-    font-weight: 800;
-    font-size: 1.75rem;
-    line-height: 2.5rem;
-    color: #8F98BA;
+.produto-descricao img {
+    width: 100%;
+    transition: linear;
+    cursor: pointer;
+    z-index: 300;
+}
+.produto-descricao span.showDescricao {
+    display: block;
+    animation: showDescricao 0.5s;
 }
 .descricao-produto {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.descricao-produto p {
-    font-weight: 600;
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+.produto-descricao span {
+    width: 80%;
     text-align: center;
-}
-.descricao-produto p strong {
-    color: #6288FF;
-}
-.img-produto {
-    width: 21.875rem;
-    height: 21.875rem;
-}
-.img-produto img {
-    width: 100%;
+    font-family: 'Asap';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    display: none;
+    height: 100%;
 }
 
-@media (max-width:1100px) and (min-width:1000px) {
-    
-    .titulos-subtitulo h1{
-        font-size: 3rem;
-        line-height: 1rem;
+@keyframes showDescricao {
+    0% {
+    transform: translateY(100%);
     }
-    .titulos-subtitulo span {
-        font-size: 1.5rem;
-        line-height: 1rem;
-    }
-    .descricao-produto p {
-        font-size: 1.8rem;
-        line-height: 2.2rem;
-    }
-    .divisao {
-        margin-top: 3rem;
-    }
-    .img-produto {
-        width: 20rem;
-        height: 20rem;
+    100% {
+        transform: translateY(0);
     }
 }
-@media (max-width: 999px) and (min-width: 800px) {
-    .container-produto-left, .container-produto-right {
-        width: 95%;
+
+@media (max-width: 1100px) and (min-width: 1000px) {
+    .produto-descricao span { 
+        font-size: 14px;
+        line-height: 18px;
     }
-    .titulos-subtitulo {
-        gap: 0;
-    }
-    .titulos-subtitulo h1{
-        font-size: 2.5rem;
-        line-height: 2rem;
-    }
-    .titulos-subtitulo span {
-        font-size: 1rem;
-    }
-    .descricao-produto p {
-        font-size: 1.3rem;
-        line-height: 1.6rem;
-    }
-    .divisao {
-        margin-top: 2.6rem;
-    }
-    .img-produto {
-        width: 18rem;
-        height: 18rem;
+    h1 {
+        font-size: 20px;
     }
 }
-@media (max-width: 799px) and (min-width:618px) {
-    .container-produto-left {
-        flex-direction: column;
-        gap: 2rem;
+@media (max-width: 999px) and (min-width: 700px) {
+    .produto {
+        width: 30%;
+        margin: 0.3rem;
     }
-    .container-produto-right {
-        flex-direction: column-reverse;
-        gap: 2rem;
-    }
-    .titulos-subtitulo {
-        gap: 01.4rem;
-    }
-    .titulos-subtitulo h1{
-        font-size: 2.4rem;
-        line-height: 1rem;
-    }
-    .titulos-subtitulo span {
-        font-size: 1.5rem;
-        line-height: 1rem;
-    }
-    .descricao-produto p {
-        font-size: 1.3rem;
-        line-height: 1.9rem;
-    }
-    .divisao {
-        margin-top: 3rem;
-    }
-    .img-produto {
-        width: 20rem;
-        height: 20rem;
+    .produto-descricao span {
+        font-size: 14px;
+        line-height: 18px;
     }
 }
-@media (max-width: 617px) and (min-width:420px) {
-    .container-produto-left {
-        flex-direction: column;
-        gap: 2rem;
+@media (max-width: 699px) and (min-width: 500px) {
+    .produto {
+        width: 40%;
+        margin: 0.3rem;
     }
-    .container-produto-right {
-        flex-direction: column-reverse;
-        gap: 2rem;
+    .produto-descricao span {
+        font-size: 12px;
+        line-height: 12px;
     }
-    .titulos-subtitulo {
-        gap: 01.4rem;
-    }
-    .titulos-subtitulo h1{
-        font-size: 1.5rem;
-        line-height: 1rem;
-    }
-    .titulos-subtitulo span {
-        font-size: 1.2rem;
-        line-height: 0rem;
-    }
-    .descricao-produto p {
-        font-size: 1rem;
-        line-height: 1.4rem;
-    }
-    .divisao {
-        margin-top: 3rem;
-    }
-    .img-produto {
-        width: 20rem;
-        height: 20rem;
-    }
-    .sem-sub {
-        gap: 1rem;
+    h1 {
+        font-size: 16px;
+        padding: 0;
     }
 }
-@media (max-width:419px) and (min-width:200px) {
-    .texto-produto {
-        width: 90%;
+@media (max-width: 499px) and (min-width: 350px) {
+    .produto {
+        width: 50%;
+        margin: 0.3rem;
     }
-    .container-produto-left {
-        flex-direction: column;
-        gap: 1.3rem;
+    .produto-descricao span {
+        font-size: 12px;
+        line-height: 12px;
     }
-    .container-produto-right {
-        flex-direction: column-reverse;
-        gap: 1.3rem;
+    h1 {
+        font-size: 18px;
     }
-    .titulos-subtitulo {
-        gap: 1.4rem;
+}
+@media (max-width: 349px) and (min-width: 200px) {
+    .produto {
+        width: 50%;
+        margin: 0.3rem;
     }
-    .titulos-subtitulo h1{
-        font-size: 1.5rem;
-        line-height: 1rem;
+    .produto-descricao span {
+        font-size: 12px;
+        line-height: 12px;
     }
-    .titulos-subtitulo span {
-        font-size: 1.2rem;
-        line-height: 0rem;
-    }
-    .descricao-produto p {
-        font-size: 1rem;
-        line-height: 1.4rem;
-    }
-    .divisao {
-        margin-top: 3rem;
-    }
-    .img-produto {
-        width: 15rem;
-        height: 15rem;
-    }
-    .sem-sub {
-        gap: 1rem;
+    h1 {
+        font-size: 16px;
+        line-height: 12px;
     }
 }

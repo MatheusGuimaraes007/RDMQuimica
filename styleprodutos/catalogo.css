@@ -1,12 +1,14 @@
 .container-introducaoCatalogo {
-    margin-top: 4rem;
+    margin-top: 5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .introducaoCatalogo {
+    margin-top: 3rem;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -14,15 +16,18 @@
     align-items: center;
     gap: 3rem;
 }
+
 .introducaoCatalogo span {
     font-weight: 700;
     font-size: 2rem;
     line-height: 2.5rem;
     text-align: center;
 }
+
 .introducaoCatalogo span strong {
     color: #6288FF;
 }
+
 .introducaoCatalogo a {
     background: linear-gradient(90deg, #263056 0%, #384267 64.04%, #5B658B 86.95%, #8F98BA 99.45%);
     border: 0.1875rem solid #5C668C;
@@ -34,65 +39,79 @@
     line-height: 2.5rem;
     color: #FFFFFF;
 }
-.introducaoCatalogo a:hover{
+
+.introducaoCatalogo a:hover {
     background-color: #263056;
     font-size: 2.5rem;
     border-radius: 2rem;
 }
-@media (width <= 732px) {
+
+@media (width <=732px) {
     .container-introducaoCatalogo {
         margin-top: 2rem;
     }
+
     .introducaoCatalogo {
         width: 90%;
     }
+
     .introducaoCatalogo span {
         font-size: 1.4rem;
         line-height: 1.8rem;
     }
+
     .introducaoCatalogo a {
         padding: 1rem 2rem;
         font-size: 1.8rem;
         line-height: 1.8rem;
     }
+
     .introducaoCatalogo a:hover {
         font-size: 1.8rem;
         border-radius: 1rem;
     }
 }
-@media (width <= 520px) {
+
+@media (width <=520px) {
     .introducaoCatalogo {
         gap: 1.5rem;
     }
+
     .introducaoCatalogo span {
         font-size: 1.2rem;
         line-height: 1.5rem;
     }
+
     .introducaoCatalogo a {
         padding: 1rem 1rem;
         font-size: 1.4rem;
         line-height: 1.4rem;
     }
+
     .introducaoCatalogo a:hover {
         font-size: 1.6rem;
         border-radius: 1rem;
     }
 }
-@media (width <= 440px) {
+
+@media (width <=440px) {
     .introducaoCatalogo span {
         font-size: 1rem;
         line-height: 1rem;
     }
+
     .introducaoCatalogo a {
         padding: 0.8rem;
         font-size: 1.2rem;
         line-height: 1.2rem;
     }
+
     .introducaoCatalogo a:hover {
         font-size: 1.3rem;
         border-radius: 0.7rem;
     }
 }
+
 @media (width < 366px) {
     .introducaoCatalogo span {
         font-size: 1rem;
