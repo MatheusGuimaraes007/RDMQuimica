@@ -11,7 +11,6 @@ export default function navBar() {
 
     const notMenu = () => {
         menuList.classList.remove('show');
-        console.log('ola')
     }
 
     quemSomos.addEventListener('click', notMenu);

@@ -110,8 +110,11 @@ h1 {
     }
 }
 @media (max-width: 499px) and (min-width: 350px) {
+    .container-produtos {
+        gap: 10px;
+    }
     .produto {
-        width: 50%;
+        width: 60%;
         margin: 0.3rem;
     }
     .produto-descricao span {
@@ -119,7 +122,7 @@ h1 {
         line-height: 12px;
     }
     h1 {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 @media (max-width: 349px) and (min-width: 200px) {

@@ -46,9 +46,9 @@
     border-radius: 2rem;
 }
 
-@media (width <=732px) {
+@media (width <= 732px) {
     .container-introducaoCatalogo {
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
     .introducaoCatalogo {
@@ -72,7 +72,7 @@
     }
 }
 
-@media (width <=520px) {
+@media (width <= 520px) {
     .introducaoCatalogo {
         gap: 1.5rem;
     }
