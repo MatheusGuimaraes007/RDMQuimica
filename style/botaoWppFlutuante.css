@@ -8,10 +8,23 @@
     animation-delay: 0s;
     animation-iteration-count: infinite;
 }
-
+.buttonzap:hover{
+    animation-name: girar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes girar{
+    to {
+        transform: rotateY(0deg);
+    }
+    from {
+        transform: rotateY(-1000deg);
+    }
+}
 .icon img {
     width: 5rem;
 }
+
 
 @keyframes balanco {
     0% {
