@@ -8,7 +8,7 @@
 }
 
 .formulario-container {
-    background-color: #ccc;
+    background-color: #E1E1E1;
     padding-bottom: 2rem;
     margin-top: 3rem;
     width: 100%;
@@ -90,6 +90,7 @@ button {
     width: 16.25rem;
     height: 3.125rem;
     background: #263056;
+    opacity: .8;
     border-radius: 0.625rem;
     align-self: center;
     margin-top: 2.1875rem;
@@ -101,8 +102,7 @@ button {
 }
 
 button:hover {
-    background-color: #888FA2;
-    color: #263056;
+    opacity: .9;
 }
 
 @media (width <= 1100px) {
