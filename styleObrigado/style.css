@@ -1,0 +1,85 @@
+@import url(footer.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Asap, sans-serif, Helvetica, Arial;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.imagem-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.imagem-logo img {
+  max-width: 25rem;
+}
+.frase-enviado {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.frase-enviado span {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+.frase-enviado a {
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #6288FF;
+  text-decoration: underline;
+  opacity: .8;
+}
+.frase-enviado a:hover {
+  opacity: 1;
+}
+
+@media (width <= 535px) {
+  .imagem-logo img {
+    width: 20rem;
+  }
+  .frase-enviado span {
+    line-height: 1.8rem;
+  }
+  .frase-enviado span, 
+  .frase-enviado a {
+    font-size: 1.6rem;
+  }
+}
+@media (width <= 400px) {
+  .imagem-logo img {
+    width: 18rem;
+  }
+  .frase-enviado span {
+    line-height: 1.8rem;
+  }
+  .frase-enviado span, .frase-enviado a {
+    font-size: 1.4rem;
+  }
+}
+@media (width <= 350px) {
+  .imagem-logo img {
+    width: 15rem;
+  }
+  .frase-enviado span {
+    line-height: 2rem;
+  }
+  .frase-enviado span, .frase-enviado a {
+    font-size: 1.2rem;
+  }
+}
