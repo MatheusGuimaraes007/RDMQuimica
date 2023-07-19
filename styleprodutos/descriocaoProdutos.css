@@ -54,17 +54,22 @@ h1 {
     align-items: center;
 }
 .produto-descricao span {
-    width: 80%;
+    width: 100%;
     text-align: center;
     font-family: 'Asap';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 20px;
-    text-align: center;
     color: #000;
     display: none;
     height: 100%;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+.descricao-produto span strong {
+    color: #263056;
+    text-decoration: underline;
 }
 @keyframes showImg {
     0% {
